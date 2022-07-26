@@ -1,14 +1,15 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.scss";
+import { Route, Routes } from 'react-router-dom';
+import React from 'react';
+import './App.scss';
+import Layout from './components/Layout';
 
 function App() {
   return (
-    <div>
-      <main>
-        {/* <Nav></Nav> */}
-      </main>
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />} />
+      </Routes>
+    </>
   );
 }
 
